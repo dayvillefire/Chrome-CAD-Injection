@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>IAR Injection Options</title>
+	  	<style>
+		    body: { padding: 20px; }
+		    input[type=text], input[type=password], select {
+			    width: 100%;
+			    padding: 12px 20px;
+			    margin: 8px 0;
+			    display: inline-block;
+			    border: 1px solid #ccc;
+			    border-radius: 4px;
+			    box-sizing: border-box;
+			}
+
+			select {
+				margin-bottom: 15px;
+			}
+
+			input[type=text]:focus, input[type=password]:focus {
+				background-color: lightblue;
+			}
+
+			#message {
+			    position: absolute;
+			    display: none;
+			    z-index: 101;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    background: #6fdc6f;
+			    text-align: center;
+			    line-height: 2.5;
+			    overflow: hidden; 
+			    -webkit-box-shadow: 0 0 5px black;
+			    -moz-box-shadow:    0 0 5px black;
+			    box-shadow:         0 0 5px black;
+			}
+
+			#mainDiv {
+			    border-radius: 5px;
+			    background-color: #f2f2f2;
+			    padding: 20px;
+			}
+
+			.images {
+				width: 100%;
+				display: flex;
+			}
+
+			.image {
+				max-width: 100%;
+			}
+
+			.imagediv {
+				text-align: center;
+				padding: 5px;
+			}
+
+			.imagediv.selected {
+				background: lightblue;
+			}
+
+			.buttonsdiv {
+				margin-top: 20px;
+			}
+
+			.button {
+			    background: lightblue;
+			    background-image: none !important;
+			    border: none;
+			    color: black;
+			    padding: 8px 10px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 14px;
+			    margin: 4px 2px;
+			    transition: all 0.4s easse 0s;
+			    cursor: pointer;
+			    opacity: 0.5;
+			}
+
+			.button:hover {
+			    opacity: 1;
+			}
+
+			#closeSection {
+				padding-top: 10px;
+				float: right;
+			}
+		    
+		</style>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	  	<script type="text/javascript" src="js/background.js"></script>
+	  	<script type="text/javascript" src="js/options.js"></script>
+	</head>
+	<body>
+		<div id="message">Options Saved!</div>
+		<div id="mainDiv">
+			<form id="settings" name="settings" action="#">
+
+				<label for="agency">Agency Name:</label>
+				<input type="text" id="agency" name="agency">
+
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username">
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password">
+
+				<label for="dashboard">Dashboard:</label>
+				<div id="images" class="images">
+					<div id = "defaultdiv" class="imagediv">
+						Default<br />
+						<img id = "default" class="image" src="images/default.png">
+					</div>
+					<div id = "incidentdiv" class="imagediv">
+						Incident<br />
+						<img id="incident" class="image" src="images/incident.png">
+					</div>
+				</div>
+				<div id="buttons" class="buttonsdiv">
+					<input type="button" id="optionsSaveStay" class="button" value="Save">
+					<input type="button" id="optionsSaveTest" class="button" value="Save &amp; Test">
+					<input type="button" id="optionsSaveClose" class="button" value="Save &amp; Close">
+				</div>
+				<input type="hidden" id="dashboard" value="">
+
+			</form>
+		</div>
+	</body>
+</html>
