@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			function: "setOptions",
 			agency: $("#agency").val(),
 			username: $("#username").val(),
-			password: $("#password").val(),
-			dashboard: $("#dashboard").val()
+			password: $("#password").val()
 
 		}, function(response) {
 
@@ -31,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			function: "setOptions",
 			agency: $("#agency").val(),
 			username: $("#username").val(),
-			password: $("#password").val(),
-			dashboard: $("#dashboard").val()
+			password: $("#password").val()
 
 		}, function(response) {
 
@@ -55,8 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			function: "setOptions",
 			agency: $("#agency").val(),
 			username: $("#username").val(),
-			password: $("#password").val(),
-			dashboard: $("#dashboard").val()
+			password: $("#password").val()
 
 		}, function(response) {
 
@@ -73,32 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	});
 
-    $("#default").click(function() {
-
-	    $("#dashboard").val("default");
-	    $("#defaultdiv").addClass("selected");
-	    $("#incidentdiv").removeClass("selected");
-
-	  });
-
-	$("#incident").click(function() {
-
-	    $("#dashboard").val("incident");
-	    $("#defaultdiv").removeClass("selected");
-	    $("#incidentdiv").addClass("selected");
-
-	  });
-
-
 	chrome.runtime.sendMessage({function: "getDefaults"}, function(response) {
 
 		$("#agency").val(response.agency);
 		$("#username").val(response.username);
 		$("#password").val(response.password);
-		$("#dashboard").val(response.dashboard);
-
-		if (response.dashboard == "default") $("#defaultdiv").addClass("selected");
-		else if (response.dashboard == "incident") $("#incidentdiv").addClass("selected");
 
     });
 	

@@ -14,14 +14,12 @@ chrome.runtime.onMessage.addListener(
       storage.get({
       agency: '',
       username: '',
-      password: '',
-      dashboard: 'default'
+      password: ''
       }, function(items) {
       	sendResponse({
       		agency: items['agency'],
       		username: items['username'],
-      		password: items['password'],
-      		dashboard: items['dashboard']
+      		password: items['password']
       	});
       });
       return true;
@@ -29,8 +27,7 @@ chrome.runtime.onMessage.addListener(
       storage.set({
         'agency':request.agency,
         'username':request.username,
-        'password':request.password,
-        'dashboard':request.dashboard
+        'password':request.password
       }, function() {
         sendResponse({ result: "complete" });
       });

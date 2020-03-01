@@ -7,9 +7,6 @@
    "content_scripts": [ {
       "js": [ "js/content.js" ],
       "matches": [ "*://www.iamresponding.com/*" ]
-   }, {
-      "css": [ "css/dashboard.css" ],
-      "matches": [ "*://www.iamresponding.com/v3/agency/incidentsdashboard.aspx" ]
    } ],
    "description": "Useful for Fire Departments that have IAR screens.  This script will automatically login the user that is set in the options.",
    "icons": {
@@ -27,5 +24,5 @@
    "permissions": [ "storage", "activeTab", "nativeMessaging" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.2.6",
-   "web_accessible_resources": [ "js/content.js", "js/options.js", "css/dashboard.css" ]
+   "web_accessible_resources": [ "js/content.js", "js/options.js" ]
 }
