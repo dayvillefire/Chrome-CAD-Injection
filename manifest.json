@@ -21,8 +21,8 @@
       "chrome_style": true,
       "page": "options.html"
    },
-   "permissions": [ "storage", "nativeMessaging" ],
+   "permissions": [ "storage" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.2.8",
+   "version": "1.2.9",
    "web_accessible_resources": [ "js/content.js", "js/options.js" ]
 }
