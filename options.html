@@ -90,6 +90,20 @@
 				padding-top: 10px;
 				float: right;
 			}
+
+			.alert{
+				position:relative;
+				padding:1rem 1rem;
+				margin-bottom:1rem;
+				border:1px solid transparent;
+				border-radius:.25rem
+			}
+
+			.alert-danger{
+				color:#842029;
+				background-color:#f8d7da;
+				border-color:#f5c2c7
+			}
 		    
 		</style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -100,6 +114,7 @@
 		<div id="message">Options Saved!</div>
 		<div id="mainDiv">
 			<form id="settings" name="settings" action="#">
+				<div class="alert alert-danger">By using this extension, you are agreeing to IAmResponding's Cookie Policy, which will be auto-accepted by this extension.  If you wish to view the cookie that you are agreeing to, you can visit <a target="_blank" href="https://iamresponding.com">https://iamresponding.com</a></div>
 
 				<label for="agency">Agency Name:</label>
 				<input type="text" id="agency" name="agency">
