@@ -6,7 +6,7 @@
    },
    "content_scripts": [ {
       "js": [ "js/content.js" ],
-      "matches": [ "*://cadview.*/*" ]
+      "matches": [ "*://cadview.qvec.org/*" ]
    } ],
    "description": "Useful for Fire Departments that have CAD access.  This script will automatically login the user that is set in the options.",
    "icons": {

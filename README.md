@@ -4,6 +4,10 @@
 
 This extension was forked from the fine work on [IAR-Injection](https://github.com/Ir8Coder/IAR-Injection). This allows automatic login to a NewWorld CAD system.
 
+## Changelog
+
+* 0.1.0 - Initial version with support for [QVEC](https://qvec.org) CAD
+
 ## Development
 
 * All of the actual hard work was done by [Ir8Coder](https://github.com/Ir8Coder)

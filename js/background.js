@@ -17,7 +17,7 @@ chrome.runtime.onMessage.addListener(
       password: ''
       }, function(items) {
       	sendResponse({
-      		agency: items['agency'],
+      		cadurl: items['cadurl'],
       		username: items['username'],
       		password: items['password']
       	});
@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener(
       return true;
     } else if (request.function == "setOptions") {
       storage.set({
-        'agency':request.agency,
+        'cadurl':request.cadurl,
         'username':request.username,
         'password':request.password
       }, function() {

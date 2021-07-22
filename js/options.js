@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		chrome.runtime.sendMessage({
 
 			function: "setOptions",
-			agency: $("#agency").val(),
+			cadurl: $("#cadurl").val(),
 			username: $("#username").val(),
 			password: $("#password").val()
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		chrome.runtime.sendMessage({
 
 			function: "setOptions",
-			agency: $("#agency").val(),
+			cadurl: $("#cadurl").val(),
 			username: $("#username").val(),
 			password: $("#password").val()
 
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		chrome.runtime.sendMessage({
 
 			function: "setOptions",
-			agency: $("#agency").val(),
+			cadurl: $("#cadurl").val(),
 			username: $("#username").val(),
 			password: $("#password").val()
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	        setTimeout(function() {
 
 	          $("#message").slideToggle("slow");
-	          window.location.href = "https://www.iamresponding.com";
+	          window.location.href = $('#cadurl').val();
 
 	        }, 3000);
 
@@ -72,12 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	chrome.runtime.sendMessage({function: "getDefaults"}, function(response) {
 
-		$("#agency").val(response.agency);
+		$("#cadurl").val(response.cadurl);
 		$("#username").val(response.username);
 		$("#password").val(response.password);
 
     });
 	
-	$("#agency").focus();
+	$("#cadurl").focus();
 
 });
