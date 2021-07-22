@@ -1,16 +1,19 @@
+# CAD-CHROME-INJECTION
+
 ## About this Extension
 
-This extension was developed so that agencies that use IAMResponding can use unattended systems.  The issue with IAR is that there is no automated login.  If the network has issues or something happens to the computer, which often does at most departments, the system would not automatically login to IAR, leaving the monitor that you rely on useless.
+This extension was forked from the fine work on [IAR-Injection](https://github.com/Ir8Coder/IAR-Injection). This allows automatic login to a NewWorld CAD system.
 
 ## Development
 
-This extension was developed solely by me, but I no longer have an IAR login.  To repair any changes made by IAR or to make the extension better is near impossible.  That is why I am opening this up to other developers that want to play around with it.  I don't forsee a lot of changes made to it since it either works or it doesn't.  Agencies don't really need anything fancy, since the functionality is for it to keep the monitor logged in that host their IAR Alerts.
+* All of the actual hard work was done by [Ir8Coder](https://github.com/Ir8Coder)
+* Add'l changes to work with CAD system made by [@jbuchbinder](https://github.com/jbuchbinder)
 
 ## License
 
 This product is licensed under the MIT License
 
-Copyright 2020 The Gray Sun
+Copyright 2020- Jeffrey Buchbinder
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
