@@ -1,4 +1,4 @@
-# CAD-CHROME-INJECTION
+# CHROME-CAD-INJECTION
 
 ## About this Extension
 
