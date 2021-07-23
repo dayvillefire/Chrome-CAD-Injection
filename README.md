@@ -4,6 +4,8 @@
 
 This extension was forked from the fine work on [IAR-Injection](https://github.com/Ir8Coder/IAR-Injection). This allows automatic login to a NewWorld CAD system.
 
+Icon : [fire safety by Iconographer from the Noun Project](https://thenounproject.com/term/fire-safety/1881895/)
+
 ## Changelog
 
 * 0.1.0 - Initial version with support for [QVEC](https://qvec.org) CAD
@@ -12,6 +14,10 @@ This extension was forked from the fine work on [IAR-Injection](https://github.c
 
 * All of the actual hard work was done by [Ir8Coder](https://github.com/Ir8Coder)
 * Add'l changes to work with CAD system made by [@jbuchbinder](https://github.com/jbuchbinder)
+
+## TODO
+
+- [ ] Update manifest with list of all CAD systems for permissions.
 
 ## License
 
