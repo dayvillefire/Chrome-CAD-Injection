@@ -1,6 +1,6 @@
 chrome.runtime.sendMessage({function: "getDefaults"}, function(response) {
 
-	var agency = response.agency;
+	var cadurl = response.cadurl;
 	var username = response.username;
 	var password = response.password;
 

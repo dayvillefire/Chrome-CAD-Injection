@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.function == "getDefaults") {
       storage.get({
-      agency: '',
+      cadurl: '',
       username: '',
       password: ''
       }, function(items) {
