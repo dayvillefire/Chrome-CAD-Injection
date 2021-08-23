@@ -8,6 +8,7 @@ Icon : [fire safety by Iconographer from the Noun Project](https://thenounprojec
 
 ## Changelog
 
+* 0.1.2 - Fix some copypasta issues
 * 0.1.1 - Update icons
 * 0.1.0 - Initial version with support for [QVEC](https://qvec.org) CAD
 
