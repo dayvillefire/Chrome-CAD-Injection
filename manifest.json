@@ -6,7 +6,24 @@
    },
    "content_scripts": [ {
       "js": [ "js/content.js" ],
-      "matches": [ "*://cadview.qvec.org/*" ]
+      "matches": [
+        "*://apps.douglas.co.us/*",
+        "*://cad.ci.woodburn.or.us/*",
+        "*://cadportal.indianacounty.org/*",
+        "*://cadview.baycounty911-mi.gov/*",
+        "*://cadview.hunt911.com/*",
+        "*://cadview.qvec.org/*",
+        "*://cadview.tollandcounty911.com/*",
+        "*://cadview911.monroemi.org/*",
+	"*://cccadview.cces911.org/*",
+        "*://ccescadview.cces911.org:81/*",
+        "*://jcpc911.com/*",
+        "*://nwswebcad.flaglersheriff.com/*",
+        "*://webview.centrecountypa.gov/*",
+        "*://webview.starksheriff.org/*",
+        "*://webview.ulstercountyny.gov/*",
+	"*://ycdes.org/*"
+      ]
    } ],
    "description": "Useful for Fire Departments that have CAD access.  This script will automatically login the user that is set in the options.",
    "icons": {
@@ -23,6 +40,6 @@
    },
    "permissions": [ "storage" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.1.2",
+   "version": "0.1.3",
    "web_accessible_resources": [ "js/content.js", "js/options.js" ]
 }
